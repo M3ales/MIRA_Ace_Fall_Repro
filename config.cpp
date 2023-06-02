@@ -15,12 +15,12 @@ class ACE_Medical_Injuries {
         class woundHandlers;
         class falling {
             class woundHandlers: woundHandlers {
-                MIRA_Ace_Fall_Handler_Min_Repro = "{ diag_log ""You fell out of luck"" }";
+                MIRA_Ace_Fall_Handler_Min_Repro = "{ diag_log ""You fell out of luck""; _this }";
             };
         };
         class collision {
             class woundHandlers: woundHandlers {
-                MIRA_Ace_Fall_Handler_Min_Repro = "{ diag_log ""You took collision damage"" }";
+                MIRA_Ace_Fall_Handler_Min_Repro = "{ diag_log ""You took collision damage""; _this }";
             };
         };
     };
